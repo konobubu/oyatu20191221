@@ -1,0 +1,47 @@
+/* ヘッダー */
+header {
+  padding-top: 4px;
+  height: 88px;
+  }
+
+header ul.account-menu {
+    width: 200px;
+    float: right;
+    font-size: 80%;
+    text-align: right;
+    list-style-type: none;
+    margin: 6px 0 0 0;
+    padding: 0;
+  }
+  
+header ul.account-menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+form#login-form input[type="text"]{
+  width: 120px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+form#login-form input[type="password"] {
+  width: 120px;
+  margin-bottom: 16px
+}
+
+form#login-form {
+  font-size: 12px;
+}
+
+form#login-form div {
+  padding: 2px;
+  text-align: center;
+}
+
+form#login-form label {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+}

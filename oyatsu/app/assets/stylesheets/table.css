@@ -1,0 +1,35 @@
+/* 表：一覧表示、詳細表示 */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  }
+
+table tr{
+  border-bottom: solid 1px rgb(12, 223, 75);
+  padding: 10px 5px;
+  height: 48px;
+}
+
+table.list tr{
+  cursor: pointer;
+}
+
+table th, table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+table.list tr:hover{
+  background-color: #d4f0fd;
+}
+  
+table td, table th {
+  padding: 4px;
+}
+  
+table th {
+  text-align: center;
+}

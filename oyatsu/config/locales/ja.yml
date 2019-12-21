@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    models:
+      member: 会員情報
+    attributes:
+      member:
+        name: ユーザー名
+        full_name: 氏名
+        gender: 性別
+        gender_1: 男
+        gender_2: 女
+        birthday: 誕生日
+        email: メールアドレス
+        current_password: 現在のパスワード
+        password: 新しいパスワード
+        password_confirmation: 新しいパスワードの確認
