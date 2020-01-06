@@ -1,0 +1,29 @@
+<h1>アカウント情報</h1>
+
+<ul class="toolbar">
+    <%= menu_link_to "アカウントの編集", :edit_account %>
+    <%= menu_link_to "パスワードの変更", :edit_password %>
+</ul>
+
+<table class="list">
+  <tr>
+    <th>ユーザー名</th>
+    <td><%= @member.name %></td>
+  </tr>
+  <tr>
+    <th>氏名</th>
+    <td><%= @member.full_name %></td>
+  </tr>
+  <tr>
+    <th>性別</th>
+    <td><%= @member.gender == 1 ? "男" : "女" %></td>
+  </tr>
+  <tr>
+    <th>誕生日</th>
+    <td><%= @member.birthday&.strftime("%Y年%m月%d日") %></td>
+  </tr>
+  <tr>
+    <th>メールアドレス</th>
+    <td><%= @member.email %></td>
+  </tr>
+</table>

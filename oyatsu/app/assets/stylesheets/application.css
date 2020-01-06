@@ -117,6 +117,7 @@
   
   /* メインコンテンツ */
   main h1 {
+    width: 32%;
     color: #88c;
     font-weight: normal;
     font-size: 150%;

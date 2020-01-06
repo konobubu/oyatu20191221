@@ -1,0 +1,8 @@
+<h1>アカウントの編集</h1>
+
+<div class="toolbar"><%= link_to "アカウント情報に戻る", :account %></div>
+
+<%= form_for @member, as: "account", url: :account do |form| %>
+  <%= render "members/form", form: form %>
+  <div><%= form.submit "更新" %></div>
+<% end %>

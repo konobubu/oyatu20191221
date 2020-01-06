@@ -1,6 +1,6 @@
 class Member < ApplicationRecord
-  has_secure_password
-  #属性 :password :password_confirmation を定義
+  has_secure_password #属性 :password :password_confirmation を定義
+  has_many :entries, dependent: :destroy #会員はブログ記事をたくさん持つ
   
   validates :name, {
     presence: true,
@@ -16,6 +16,9 @@ class Member < ApplicationRecord
   validates :full_name, { presence: true, length: { maximum: 20 } }
   validates :gender, { presence: true }
   validates :email, email: { allow_blank: true } #gemパッケージemail_validatorを使用
+
+  attr_accessor :current_passworは
+  validate :password, { if: :current_password } #新規登録のみ発動するため
 
   class << self
       def search(query)
